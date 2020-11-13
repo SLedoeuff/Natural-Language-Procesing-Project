@@ -1,0 +1,68 @@
+# -*- coding: utf-8 -*-
+from nltk.stem.snowball import FrenchStemmer
+import unidecode
+#stemmer francais, cocorico
+
+stemmer = FrenchStemmer()
+print(stemmer.stem('respectez'))
+print(stemmer.stem('respecterai'))
+print(stemmer.stem('merde'))
+print(stemmer.stem('merdeux'))
+print(stemmer.stem('honte'))
+print(stemmer.stem('honteux'))
+print(stemmer.stem('scandaleux'))
+print(stemmer.stem('voudrais'))
+print(stemmer.stem('salope'))
+print(stemmer.stem('salopard'))
+print(stemmer.stem('erreurs'))
+print(stemmer.stem('fabuleux'))
+print(stemmer.stem('fabuleuse'))
+print(stemmer.stem('merveilleux'))
+print(stemmer.stem('merveilleuse'))
+print(stemmer.stem('merveille'))
+print(stemmer.stem('con'))
+print(stemmer.stem('conne'))
+print(stemmer.stem('connard'))
+print(stemmer.stem('connarde'))
+print(stemmer.stem('connasse'))
+print(stemmer.stem('caillasse'))
+print(stemmer.stem('passe'))
+print(stemmer.stem('vouloir'))
+print(stemmer.stem('voulait'))
+print(stemmer.stem('voulaient'))
+print(stemmer.stem('pouffe'))
+print(stemmer.stem('pouffiasse'))
+print(stemmer.stem('lier'))
+print(stemmer.stem('lien'))
+print(stemmer.stem('liaison'))
+print(stemmer.stem('liasse'))
+print(stemmer.stem('fetard'))
+print(stemmer.stem('fete'))
+print(stemmer.stem('festif'))
+print(stemmer.stem('trouille'))
+print(stemmer.stem('trouillard'))
+print(stemmer.stem('trouillarde'))
+print(stemmer.stem('polluer'))
+print(stemmer.stem('pollution'))
+print(stemmer.stem('evoluer'))
+print(stemmer.stem('evolution'))
+print(stemmer.stem('evolutif'))
+print(stemmer.stem('suffir'))
+print(stemmer.stem('suffisant'))
+print(stemmer.stem('insuffisant'))
+print(stemmer.stem(stemmer.stem(stemmer.stem('anticonstitutionnellement'))))
+print(stemmer.stem('de'))
+print(stemmer.stem('des'))
+print(stemmer.stem('le'))
+print(stemmer.stem('la'))
+
+print(stemmer.stem(unidecode.unidecode(u'là')))
+print(stemmer.stem(('latté').decode('utf-8')))
+
+"""
+motsPositif = ["calm","symp","coeur","fort","raison","reuss","premi","froid","sang","gagn","excellent","saint","amis","bravo","sauv","defend","meilleur","solut","intelligent","aid","heureux"]
+motsNegatif = ["suicid","peur","vid","merd","gross","dommag","hont","perdr","fiscal","meuf","regret","fachospher","insolent","con","null","perdu","dout","mauvais","alert","mort","debil","putain","mensong","agress","constern","gueul","minabl","arrog","parasit","mediocr","trump","naufrag","hyster","delir","ridicul","indign","incompetent","fou","mediocrit","racist","intox","hain","cru","violenc","insult","ferm","marr","drogu","souffr","trist","malheur","perlimpinpin","pauvr","gamin","ko","catastroph","couill","mepr","agressivit","violent","blagu","moqu","plomb","echec","ridiculise","nul","cul","terror","afflig","????","???","??","?!","!!","!!!","!!!!","haineux","danger"]
+
+print(len(motsNegatif))
+print(len(motsPositif))
+"""
